@@ -13,6 +13,7 @@ services:
       - ./:/opt/formsg
       - /opt/formsg/node_modules
     ports:
+<<<<<<< HEAD
       - '5001:5000'
       - '4566:4566' # localstack ports
       - '5156:5156' # mockpass ports
@@ -154,6 +155,8 @@ services:
       - SHOW_LOGIN_PAGE=true
       - SP_RP_JWKS_ENDPOINT=http://localhost:5000/sp/.well-known/jwks.json
       - CP_RP_JWKS_ENDPOINT=http://localhost:5000/api/v3/corppass/.well-known/jwks.json
+=======
+>>>>>>> 9ff3fa08d0a48e19acf4f3a8289ca691053af2f8
     network_mode: 'service:backend' # reuse backend service's network stack so that it can resolve localhost:5156 to mockpass:5156
 
   database:
