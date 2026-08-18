@@ -20,7 +20,7 @@ services:
     environment:
       - NODE_ENV=development
       - DB_HOST=mongodb://database:27017/formsg?directConnection=true
-      - APP_NAME=FormSG
+      - APP_NAME=ILOVESG
       - APP_URL=http://localhost:5001
       - FE_APP_URL=http://localhost:5173
       - ATTACHMENT_S3_BUCKET=local-attachment-bucket
